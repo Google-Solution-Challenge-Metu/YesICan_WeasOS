@@ -1,6 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wearos">
     <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- Required for heart rate -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <!-- Required for calories, steps, distance, speed -->
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <!-- Required to use location to estimate distance, speed -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
    <application
         android:label="wearos"
         android:name="${applicationName}"

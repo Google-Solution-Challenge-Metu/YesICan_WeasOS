@@ -38,6 +38,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   wear: ^1.1.0
   rotary_scrollbar: ^0.1.1
+  workout: ^0.6.0
+  #wearable_communicator: ^0.1.1
 
 dev_dependencies:
   flutter_test:
