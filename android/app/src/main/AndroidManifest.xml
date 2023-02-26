@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wearos">
     <uses-permission android:name="android.permission.VIBRATE"/>
-    <!-- Required for heart rate -->
+    <!-- Required for heart ratee -->
     <uses-permission android:name="android.permission.BODY_SENSORS" />
     <!-- Required for calories, steps, distance, speed -->
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />

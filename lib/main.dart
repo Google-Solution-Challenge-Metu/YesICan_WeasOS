@@ -1,6 +1,6 @@
 //import 'package:flutter/material.dart';
 //import 'package:wearos/intro.dart';
-//
+// // ya
 //void main() {
 //  runApp(const PartlyWindy());
 //}
