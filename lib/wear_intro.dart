@@ -1,14 +1,14 @@
 import "package:flutter/material.dart";
-import 'package:wearos/sos.dart';
+import "package:wearos/wear_auth.dart";
 
-class Intro_page extends StatefulWidget {
-  const Intro_page({super.key});
+class Intro_Wear extends StatefulWidget {
+  const Intro_Wear({super.key});
 
   @override
-  State<Intro_page> createState() => _Intro_pageState();
+  State<Intro_Wear> createState() => _Intro_WearState();
 }
 
-class _Intro_pageState extends State<Intro_page> {
+class _Intro_WearState extends State<Intro_Wear> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,19 +19,24 @@ class _Intro_pageState extends State<Intro_page> {
         
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title: const Text("Let's Start"),
+        title: const Text(
+          "Let's Start",
+          style: TextStyle(
+            color: Color(0xffe97d47),
+          ),
+          ),
       ),
       body: Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Colors.orange,
-              Color.fromARGB(255, 245, 203, 141),
-            ],
-            stops: [0.05,1],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter
-          )
+          //gradient: LinearGradient(
+          //  colors: [
+          //    Colors.orange,
+          //    Color.fromARGB(255, 245, 203, 141),
+          //  ],
+          //  stops: [0.05,1],
+          //  begin: Alignment.topCenter,
+          //  end: Alignment.bottomCenter
+          //)
         ),
         child: Column(
           children: [
@@ -43,7 +48,7 @@ class _Intro_pageState extends State<Intro_page> {
                 bottom: 0,
               ),
               child: Image.asset(
-                'assets/google.png',
+                'assets/hands.png',
                 height: 50,
               ),
             ),
@@ -61,7 +66,7 @@ class _Intro_pageState extends State<Intro_page> {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return sos_page();
+                    return Wear_Auth();
                   },
                 ),
               ),
@@ -69,7 +74,7 @@ class _Intro_pageState extends State<Intro_page> {
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
-                  color: Color.fromARGB(255, 222, 91, 91),
+                  color: Color(0xffe97d47),
                 ),
                 child: const Text(
                   "Get Started",
